@@ -1,0 +1,22 @@
+name: mac_address
+description: A new Flutter plugin project.
+version: 0.0.1
+#homepage:
+
+environment:
+  sdk: '>=2.18.4 <3.0.0'
+  flutter: ">=2.5.0"
+
+dependencies:
+  plugin_platform_interface: ^2.0.2
+
+#dev_dependencies:
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.example.mac_address
+        pluginClass: MacAddressPlugin
+      ios:
+        pluginClass: MacAddressPlugin
