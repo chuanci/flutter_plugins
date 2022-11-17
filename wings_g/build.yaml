@@ -1,0 +1,7 @@
+builders:
+  appBuilder:
+    import: "package:wings_g/builder.dart"
+    builder_factories: [ "freezedBuilder" ]
+    build_extensions: { ".dart": [ "freezed.wings.part" ] }
+    auto_apply: root_package
+    build_to: cache
