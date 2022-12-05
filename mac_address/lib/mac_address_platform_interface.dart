@@ -23,7 +23,7 @@ abstract class MacAddressPlatform extends PlatformInterface {
     _instance = instance;
   }
 
-  Future<String?> getMacAddress() {
+  Future<String?> getMacAddress(String defaultMacAddress) {
     throw UnimplementedError('platformVersion() has not been implemented.');
   }
 }

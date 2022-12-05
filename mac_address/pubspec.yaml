@@ -10,8 +10,9 @@ environment:
 dependencies:
   plugin_platform_interface: ^2.0.2
 
-#dev_dependencies:
-
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
 flutter:
   plugin:
     platforms:

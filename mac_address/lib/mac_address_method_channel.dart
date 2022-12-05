@@ -10,9 +10,9 @@ class MethodChannelMacAddress extends MacAddressPlatform {
   final methodChannel = const MethodChannel('mac_address');
 
   @override
-  Future<String?> getMacAddress() async {
+  Future<String?> getMacAddress(String defaultMacAddress) async {
     final macAddress =
         await methodChannel.invokeMethod<String>('getMacAddress');
-    return macAddress;
+    return macAddress ?? defaultMacAddress;
   }
 }

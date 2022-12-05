@@ -19,6 +19,6 @@ void main() {
   });
 
   test('getPlatformVersion', () async {
-    expect(await platform.getMacAddress(), '42');
+    expect(await platform.getMacAddress("123123"), '42');
   });
 }

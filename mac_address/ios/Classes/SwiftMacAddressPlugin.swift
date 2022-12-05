@@ -9,7 +9,6 @@ public class SwiftMacAddressPlugin: NSObject, FlutterPlugin {
   }
 
   public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
-//     result("iOS " + UIDevice.current.systemVersion)
-    result("02:00:00:00:00:00")
+    result(nil)
   }
 }
